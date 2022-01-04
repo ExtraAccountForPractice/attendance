@@ -67,8 +67,12 @@
                     <input type="number" class="form-control" id="phone" aria-describedby="phoneHelp" name="phoneHelp" value="<?php echo $r['contactnumber'];?>" required>
                     <div id="phoneHelp" class="form-text">We'll never share your Contact Number with anyone else.</div>
                 </div>
-                <button onclick="return confirm('Are you Sure you want to continue to Update this Record?');" type="submit" class="btn btn-primary btn-lg btn-block" name="submit" >Save Changes</button>
+                <button onclick="return confirm('Are you Sure you want to continue to Update this Record?');" type="submit" class="btn btn-success btn-lg btn-block" name="submit" >Save Changes</button>
                 </div>
+        </form>
+        <br><br>
+        <form method="post" action="viewrecords.php">
+        <button onclick="return confirm('Are you Sure you want to go back to RECORD LIST?');" class="btn btn-primary btn-lg btn-block">BACK TO LIST</button>
         </form>
 
 <?php 
